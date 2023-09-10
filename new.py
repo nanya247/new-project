@@ -9,7 +9,7 @@ def get_info():
     # Get current day of the week
     current_day = datetime.now(pytz.utc).strftime('%A')
     # Get current UTC time
-    current_utc_time = datetime.now(pytz.utc).strftime('%Y-%m-%d %H:%M:%S')
+    current_utc_time = datetime.now(pytz.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
     # Define GitHub URLs
     github_file_url = "https://github.com/username/repo/blob/main/file_name.ext"
     github_repo_url = "https://github.com/username/repo"
